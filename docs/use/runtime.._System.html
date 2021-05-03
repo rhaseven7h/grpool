@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime._System</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">func <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/proc.go.html#line-4362">_System</a></b></span>
+
+<span class="title">4 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/cpuprof.go.html#line-171">cpuprof.go#L171</a>: 			funcPC(<b>_System</b>) + sys.PCQuantum,
+		<a href="../src/runtime/proc.go.html#line-4362">proc.go#L4362</a>: func <b>_System</b>()                    { <b>_System</b>() }
+		<a href="../src/runtime/proc.go.html#line-4527" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-4527">#L4527</a>: 				stk[1] = funcPC(<b>_System</b>) + sys.PCQuantum
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

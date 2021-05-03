@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime/internal/atomic.Casp1</title>
+<link href="../../../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../../../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">func <b><a href="../../../pkg/runtime/internal/atomic.html">runtime/internal/atomic</a>.<a href="../../../src/runtime/internal/atomic/stubs.go.html#line-15">Casp1</a></b></span>
+
+<span class="title">2 uses</span>
+
+	runtime/internal/atomic (current package)
+		<a href="../../../src/runtime/internal/atomic/stubs.go.html#line-15">stubs.go#L15</a>: func <b>Casp1</b>(ptr *unsafe.Pointer, old, new unsafe.Pointer) bool
+
+	<a href="../../../pkg/runtime.html">runtime</a>
+		<a href="../../../src/runtime/stack.go.html#line-615">stack.go#L615</a>: 					if !atomic.<b>Casp1</b>(ppu, unsafe.Pointer(p), unsafe.Pointer(p+delta)) {
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

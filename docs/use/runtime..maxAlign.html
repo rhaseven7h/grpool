@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.maxAlign</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">const <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/chan.go.html#line-27">maxAlign</a></b></span>
+
+<span class="title">4 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/chan.go.html#line-27">chan.go#L27</a>: 	<b>maxAlign</b>  = 8
+		<a href="../src/runtime/chan.go.html#line-28" class="path-duplicate">chan.go</a><a href="../src/runtime/chan.go.html#line-28">#L28</a>: 	hchanSize = unsafe.Sizeof(hchan{}) + uintptr(-int(unsafe.Sizeof(hchan{}))&amp;(<b>maxAlign</b>-1))
+		<a href="../src/runtime/chan.go.html#line-78" class="path-duplicate">chan.go</a><a href="../src/runtime/chan.go.html#line-78">#L78</a>: 	if hchanSize%<b>maxAlign</b> != 0 || elem.align &gt; <b>maxAlign</b> {
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

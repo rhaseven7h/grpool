@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: sync.RWMutex</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">type <b><a href="../pkg/sync.html">sync</a>.<a href="../src/sync/rwmutex.go.html#line-28">RWMutex</a></b></span>
+
+<span class="title">10 uses</span>
+
+	sync (current package)
+		<a href="../src/sync/rwmutex.go.html#line-28">rwmutex.go#L28</a>: type <b>RWMutex</b> struct {
+		<a href="../src/sync/rwmutex.go.html#line-56" class="path-duplicate">rwmutex.go</a><a href="../src/sync/rwmutex.go.html#line-56">#L56</a>: func (rw *<b>RWMutex</b>) RLock() {
+		<a href="../src/sync/rwmutex.go.html#line-75" class="path-duplicate">rwmutex.go</a><a href="../src/sync/rwmutex.go.html#line-75">#L75</a>: func (rw *<b>RWMutex</b>) RUnlock() {
+		<a href="../src/sync/rwmutex.go.html#line-90" class="path-duplicate">rwmutex.go</a><a href="../src/sync/rwmutex.go.html#line-90">#L90</a>: func (rw *<b>RWMutex</b>) rUnlockSlow(r int32) {
+		<a href="../src/sync/rwmutex.go.html#line-105" class="path-duplicate">rwmutex.go</a><a href="../src/sync/rwmutex.go.html#line-105">#L105</a>: func (rw *<b>RWMutex</b>) Lock() {
+		<a href="../src/sync/rwmutex.go.html#line-131" class="path-duplicate">rwmutex.go</a><a href="../src/sync/rwmutex.go.html#line-131">#L131</a>: func (rw *<b>RWMutex</b>) Unlock() {
+		<a href="../src/sync/rwmutex.go.html#line-157" class="path-duplicate">rwmutex.go</a><a href="../src/sync/rwmutex.go.html#line-157">#L157</a>: func (rw *<b>RWMutex</b>) RLocker() Locker {
+		<a href="../src/sync/rwmutex.go.html#line-161" class="path-duplicate">rwmutex.go</a><a href="../src/sync/rwmutex.go.html#line-161">#L161</a>: type rlocker <b>RWMutex</b>
+		<a href="../src/sync/rwmutex.go.html#line-163" class="path-duplicate">rwmutex.go</a><a href="../src/sync/rwmutex.go.html#line-163">#L163</a>: func (r *rlocker) Lock()   { (*<b>RWMutex</b>)(r).RLock() }
+		<a href="../src/sync/rwmutex.go.html#line-164" class="path-duplicate">rwmutex.go</a><a href="../src/sync/rwmutex.go.html#line-164">#L164</a>: func (r *rlocker) Unlock() { (*<b>RWMutex</b>)(r).RUnlock() }
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.msanfree</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">func <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/msan0.go.html#line-22">msanfree</a></b></span>
+
+<span class="title">4 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/mgcsweep.go.html#line-425">mgcsweep.go#L425</a>: 					<b>msanfree</b>(unsafe.Pointer(x), size)
+		<a href="../src/runtime/mheap.go.html#line-1415">mheap.go#L1415</a>: 			<b>msanfree</b>(base, bytes)
+		<a href="../src/runtime/msan0.go.html#line-22">msan0.go#L22</a>: func <b>msanfree</b>(addr unsafe.Pointer, sz uintptr)     { throw("msan") }
+		<a href="../src/runtime/stack.go.html#line-450">stack.go#L450</a>: 		<b>msanfree</b>(v, n)
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

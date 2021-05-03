@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: sync/atomic.Value.Load</title>
+<link href="../../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;"><b><a href="../../pkg/sync/atomic.html">sync/atomic</a>.<a href="../../src/sync/atomic/value.go.html#line-16">Value</a>.<a href="../../src/sync/atomic/value.go.html#line-28">Load</a></b></span><span style="font-size: large;"><i> (method)</i></span>
+
+<span class="title">12 uses</span>
+
+	sync/atomic (current package)
+		<a href="../../src/sync/atomic/value.go.html#line-28">value.go#L28</a>: func (v *Value) <b>Load</b>() (x interface{}) {
+
+	<a href="../../pkg/sync.html">sync</a>
+		<a href="../../src/sync/map.go.html#line-103">map.go#L103</a>: 	read, _ := m.read.<b>Load</b>().(readOnly)
+		<a href="../../src/sync/map.go.html#line-110" class="path-duplicate">map.go</a><a href="../../src/sync/map.go.html#line-110">#L110</a>: 		read, _ = m.read.<b>Load</b>().(readOnly)
+		<a href="../../src/sync/map.go.html#line-137" class="path-duplicate">map.go</a><a href="../../src/sync/map.go.html#line-137">#L137</a>: 	read, _ := m.read.<b>Load</b>().(readOnly)
+		<a href="../../src/sync/map.go.html#line-143" class="path-duplicate">map.go</a><a href="../../src/sync/map.go.html#line-143">#L143</a>: 	read, _ = m.read.<b>Load</b>().(readOnly)
+		<a href="../../src/sync/map.go.html#line-201" class="path-duplicate">map.go</a><a href="../../src/sync/map.go.html#line-201">#L201</a>: 	read, _ := m.read.<b>Load</b>().(readOnly)
+		<a href="../../src/sync/map.go.html#line-210" class="path-duplicate">map.go</a><a href="../../src/sync/map.go.html#line-210">#L210</a>: 	read, _ = m.read.<b>Load</b>().(readOnly)
+		<a href="../../src/sync/map.go.html#line-269" class="path-duplicate">map.go</a><a href="../../src/sync/map.go.html#line-269">#L269</a>: 	read, _ := m.read.<b>Load</b>().(readOnly)
+		<a href="../../src/sync/map.go.html#line-273" class="path-duplicate">map.go</a><a href="../../src/sync/map.go.html#line-273">#L273</a>: 		read, _ = m.read.<b>Load</b>().(readOnly)
+		<a href="../../src/sync/map.go.html#line-323" class="path-duplicate">map.go</a><a href="../../src/sync/map.go.html#line-323">#L323</a>: 	read, _ := m.read.<b>Load</b>().(readOnly)
+		<a href="../../src/sync/map.go.html#line-330" class="path-duplicate">map.go</a><a href="../../src/sync/map.go.html#line-330">#L330</a>: 		read, _ = m.read.<b>Load</b>().(readOnly)
+		<a href="../../src/sync/map.go.html#line-366" class="path-duplicate">map.go</a><a href="../../src/sync/map.go.html#line-366">#L366</a>: 	read, _ := m.read.<b>Load</b>().(readOnly)
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.Frame.PC</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;"><b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/symtab.go.html#line-25">Frame</a>.<a href="../src/runtime/symtab.go.html#line-31">PC</a></b></span><span style="font-size: large;"><i> (field)</i></span>
+
+<span class="title">7 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/extern.go.html#line-206">extern.go#L206</a>: 	return frame.<b>PC</b>, frame.File, frame.Line, frame.<b>PC</b> != 0
+		<a href="../src/runtime/symtab.go.html#line-31">symtab.go#L31</a>: 	<b>PC</b> uintptr
+		<a href="../src/runtime/symtab.go.html#line-117" class="path-duplicate">symtab.go</a><a href="../src/runtime/symtab.go.html#line-117">#L117</a>: 			<b>PC</b>:       pc,
+		<a href="../src/runtime/symtab.go.html#line-147" class="path-duplicate">symtab.go</a><a href="../src/runtime/symtab.go.html#line-147">#L147</a>: 		file, line := funcline1(frame.funcInfo, frame.<b>PC</b>, false)
+		<a href="../src/runtime/symtab.go.html#line-224" class="path-duplicate">symtab.go</a><a href="../src/runtime/symtab.go.html#line-224">#L224</a>: 			<b>PC</b>:       pc,
+		<a href="../src/runtime/trace.go.html#line-862">trace.go#L862</a>: 				tmpbuf = traceAppend(tmpbuf, uint64(f.<b>PC</b>))
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

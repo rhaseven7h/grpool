@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.extram</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">var <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/proc.go.html#line-1998">extram</a></b></span>
+
+<span class="title">4 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/proc.go.html#line-1998">proc.go#L1998</a>: var <b>extram</b> uintptr
+		<a href="../src/runtime/proc.go.html#line-2013" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-2013">#L2013</a>: 		old := atomic.Loaduintptr(&amp;<b>extram</b>)
+		<a href="../src/runtime/proc.go.html#line-2029" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-2029">#L2029</a>: 		if atomic.Casuintptr(&amp;<b>extram</b>, old, locked) {
+		<a href="../src/runtime/proc.go.html#line-2039" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-2039">#L2039</a>: 	atomic.Storeuintptr(&amp;<b>extram</b>, uintptr(unsafe.Pointer(mp)))
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

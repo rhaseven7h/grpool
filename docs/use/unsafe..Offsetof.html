@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: unsafe.Offsetof</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">func <b><a href="../pkg/unsafe.html">unsafe</a>.<a href="../src/unsafe/unsafe.go.html#line-194">Offsetof</a></b></span>
+
+<span class="title">23 uses</span>
+
+	unsafe (current package)
+		<a href="../src/unsafe/unsafe.go.html#line-194">unsafe.go#L194</a>: func <b>Offsetof</b>(x ArbitraryType) uintptr
+
+	<a href="../pkg/internal/bytealg.html">internal/bytealg</a>
+		<a href="../src/internal/bytealg/bytealg.go.html#line-14">bytealg.go#L14</a>: 	offsetX86HasSSE2   = unsafe.<b>Offsetof</b>(cpu.X86.HasSSE2)
+		<a href="../src/internal/bytealg/bytealg.go.html#line-15" class="path-duplicate">bytealg.go</a><a href="../src/internal/bytealg/bytealg.go.html#line-15">#L15</a>: 	offsetX86HasSSE42  = unsafe.<b>Offsetof</b>(cpu.X86.HasSSE42)
+		<a href="../src/internal/bytealg/bytealg.go.html#line-16" class="path-duplicate">bytealg.go</a><a href="../src/internal/bytealg/bytealg.go.html#line-16">#L16</a>: 	offsetX86HasAVX2   = unsafe.<b>Offsetof</b>(cpu.X86.HasAVX2)
+		<a href="../src/internal/bytealg/bytealg.go.html#line-17" class="path-duplicate">bytealg.go</a><a href="../src/internal/bytealg/bytealg.go.html#line-17">#L17</a>: 	offsetX86HasPOPCNT = unsafe.<b>Offsetof</b>(cpu.X86.HasPOPCNT)
+		<a href="../src/internal/bytealg/bytealg.go.html#line-19" class="path-duplicate">bytealg.go</a><a href="../src/internal/bytealg/bytealg.go.html#line-19">#L19</a>: 	offsetS390xHasVX = unsafe.<b>Offsetof</b>(cpu.S390X.HasVX)
+
+	<a href="../pkg/runtime.html">runtime</a>
+		<a href="../src/runtime/cpuflags.go.html#line-14">cpuflags.go#L14</a>: 	offsetX86HasAVX  = unsafe.<b>Offsetof</b>(cpu.X86.HasAVX)
+		<a href="../src/runtime/cpuflags.go.html#line-15" class="path-duplicate">cpuflags.go</a><a href="../src/runtime/cpuflags.go.html#line-15">#L15</a>: 	offsetX86HasAVX2 = unsafe.<b>Offsetof</b>(cpu.X86.HasAVX2)
+		<a href="../src/runtime/cpuflags.go.html#line-16" class="path-duplicate">cpuflags.go</a><a href="../src/runtime/cpuflags.go.html#line-16">#L16</a>: 	offsetX86HasERMS = unsafe.<b>Offsetof</b>(cpu.X86.HasERMS)
+		<a href="../src/runtime/cpuflags.go.html#line-17" class="path-duplicate">cpuflags.go</a><a href="../src/runtime/cpuflags.go.html#line-17">#L17</a>: 	offsetX86HasSSE2 = unsafe.<b>Offsetof</b>(cpu.X86.HasSSE2)
+		<a href="../src/runtime/cpuflags.go.html#line-19" class="path-duplicate">cpuflags.go</a><a href="../src/runtime/cpuflags.go.html#line-19">#L19</a>: 	offsetARMHasIDIVA = unsafe.<b>Offsetof</b>(cpu.ARM.HasIDIVA)
+		<a href="../src/runtime/cpuflags.go.html#line-21" class="path-duplicate">cpuflags.go</a><a href="../src/runtime/cpuflags.go.html#line-21">#L21</a>: 	offsetMIPS64XHasMSA = unsafe.<b>Offsetof</b>(cpu.MIPS64X.HasMSA)
+		<a href="../src/runtime/map.go.html#line-83">map.go#L83</a>: 	dataOffset = unsafe.<b>Offsetof</b>(struct {
+		<a href="../src/runtime/mfinal.go.html#line-98">mfinal.go#L98</a>: 					unsafe.<b>Offsetof</b>(finalizer{}.fn) != 0 ||
+		<a href="../src/runtime/mfinal.go.html#line-99" class="path-duplicate">mfinal.go</a><a href="../src/runtime/mfinal.go.html#line-99">#L99</a>: 					unsafe.<b>Offsetof</b>(finalizer{}.arg) != sys.PtrSize ||
+		<a href="../src/runtime/mfinal.go.html#line-100" class="path-duplicate">mfinal.go</a><a href="../src/runtime/mfinal.go.html#line-100">#L100</a>: 					unsafe.<b>Offsetof</b>(finalizer{}.nret) != 2*sys.PtrSize ||
+		<a href="../src/runtime/mfinal.go.html#line-101" class="path-duplicate">mfinal.go</a><a href="../src/runtime/mfinal.go.html#line-101">#L101</a>: 					unsafe.<b>Offsetof</b>(finalizer{}.fint) != 3*sys.PtrSize ||
+		<a href="../src/runtime/mfinal.go.html#line-102" class="path-duplicate">mfinal.go</a><a href="../src/runtime/mfinal.go.html#line-102">#L102</a>: 					unsafe.<b>Offsetof</b>(finalizer{}.ot) != 4*sys.PtrSize) {
+		<a href="../src/runtime/mheap.go.html#line-2041">mheap.go#L2041</a>: 	if uintptr(unsafe.<b>Offsetof</b>(gcBitsArena{}.bits))&7 == 0 {
+		<a href="../src/runtime/mstats.go.html#line-446">mstats.go#L446</a>: 	if offset := unsafe.<b>Offsetof</b>(memstats.heap_live); offset%8 != 0 {
+		<a href="../src/runtime/mstats.go.html#line-450" class="path-duplicate">mstats.go</a><a href="../src/runtime/mstats.go.html#line-450">#L450</a>: 	if offset := unsafe.<b>Offsetof</b>(memstats.heapStats); offset%8 != 0 {
+		<a href="../src/runtime/mstats.go.html#line-454" class="path-duplicate">mstats.go</a><a href="../src/runtime/mstats.go.html#line-454">#L454</a>: 	if offset := unsafe.<b>Offsetof</b>(memstats.gcPauseDist); offset%8 != 0 {
+		<a href="../src/runtime/runtime1.go.html#line-202">runtime1.go#L202</a>: 	if unsafe.<b>Offsetof</b>(y1.y) != 1 {
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

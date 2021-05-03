@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.noCheck</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">const <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/map.go.html#line-106">noCheck</a></b></span>
+
+<span class="title">4 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/map.go.html#line-106">map.go#L106</a>: 	<b>noCheck</b> = 1<<(8*sys.PtrSize) - 1
+		<a href="../src/runtime/map.go.html#line-885" class="path-duplicate">map.go</a><a href="../src/runtime/map.go.html#line-885">#L885</a>: 				checkBucket = <b>noCheck</b>
+		<a href="../src/runtime/map.go.html#line-889" class="path-duplicate">map.go</a><a href="../src/runtime/map.go.html#line-889">#L889</a>: 			checkBucket = <b>noCheck</b>
+		<a href="../src/runtime/map.go.html#line-910" class="path-duplicate">map.go</a><a href="../src/runtime/map.go.html#line-910">#L910</a>: 		if checkBucket != <b>noCheck</b> && !h.sameSizeGrow() {
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

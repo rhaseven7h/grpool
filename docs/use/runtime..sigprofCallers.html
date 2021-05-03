@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.sigprofCallers</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">var <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/proc.go.html#line-4541">sigprofCallers</a></b></span>
+
+<span class="title">4 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/proc.go.html#line-4541">proc.go#L4541</a>: var <b>sigprofCallers</b> cgoCallers
+		<a href="../src/runtime/proc.go.html#line-4553" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-4553">#L4553</a>: 		for n &lt; len(<b>sigprofCallers</b>) &amp;&amp; <b>sigprofCallers</b>[n] != 0 {
+		<a href="../src/runtime/proc.go.html#line-4556" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-4556">#L4556</a>: 		cpuprof.addNonGo(<b>sigprofCallers</b>[:n])
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

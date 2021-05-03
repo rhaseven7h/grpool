@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.maxElemSize</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">const <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/map.go.html#line-78">maxElemSize</a></b></span>
+
+<span class="title">3 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/map.go.html#line-78">map.go#L78</a>: 	<b>maxElemSize</b> = 128
+		<a href="../src/runtime/map.go.html#line-1287" class="path-duplicate">map.go</a><a href="../src/runtime/map.go.html#line-1287">#L1287</a>: 	if t.elem.size &gt; <b>maxElemSize</b> && (!t.indirectelem() || t.elemsize != uint8(sys.PtrSize)) ||
+		<a href="../src/runtime/map.go.html#line-1288" class="path-duplicate">map.go</a><a href="../src/runtime/map.go.html#line-1288">#L1288</a>: 		t.elem.size &lt;= <b>maxElemSize</b> && (t.indirectelem() || t.elemsize != uint8(t.elem.size)) {
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.runqget</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">func <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/proc.go.html#line-5851">runqget</a></b></span>
+
+<span class="title">5 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/mgc.go.html#line-1989">mgc.go#L1989</a>: 						gp, _ := <b>runqget</b>(pp)
+		<a href="../src/runtime/proc.go.html#line-2583">proc.go#L2583</a>: 	if gp, inheritTime := <b>runqget</b>(_p_); gp != nil {
+		<a href="../src/runtime/proc.go.html#line-2670" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-2670">#L2670</a>: 					if gp, inheritTime := <b>runqget</b>(_p_); gp != nil {
+		<a href="../src/runtime/proc.go.html#line-3120" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-3120">#L3120</a>: 		gp, inheritTime = <b>runqget</b>(_g_.m.p.ptr())
+		<a href="../src/runtime/proc.go.html#line-5851" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-5851">#L5851</a>: func <b>runqget</b>(_p_ *p) (gp *g, inheritTime bool) {
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

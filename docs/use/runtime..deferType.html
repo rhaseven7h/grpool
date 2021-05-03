@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.deferType</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">var <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/panic.go.html#line-376">deferType</a></b></span>
+
+<span class="title">4 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/malloc.go.html#line-1093">malloc.go#L1093</a>: 		if typ == <b>deferType</b> {
+		<a href="../src/runtime/panic.go.html#line-376">panic.go#L376</a>: var <b>deferType</b> *_type // type of _defer struct
+		<a href="../src/runtime/panic.go.html#line-381" class="path-duplicate">panic.go</a><a href="../src/runtime/panic.go.html#line-381">#L381</a>: 	<b>deferType</b> = (*(**ptrtype)(unsafe.Pointer(&x))).elem
+		<a href="../src/runtime/panic.go.html#line-422" class="path-duplicate">panic.go</a><a href="../src/runtime/panic.go.html#line-422">#L422</a>: 			d = (*_defer)(mallocgc(total, <b>deferType</b>, true))
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

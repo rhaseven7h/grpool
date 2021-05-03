@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.maxTinySize</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">const <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/malloc.go.html#line-113">maxTinySize</a></b></span>
+
+<span class="title">5 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/malloc.go.html#line-113">malloc.go#L113</a>: 	<b>maxTinySize</b>   = _TinySize
+		<a href="../src/runtime/malloc.go.html#line-985" class="path-duplicate">malloc.go</a><a href="../src/runtime/malloc.go.html#line-985">#L985</a>: 		if noscan &amp;&amp; size &lt; <b>maxTinySize</b> {
+		<a href="../src/runtime/malloc.go.html#line-1032" class="path-duplicate">malloc.go</a><a href="../src/runtime/malloc.go.html#line-1032">#L1032</a>: 			if off+size &lt;= <b>maxTinySize</b> && c.tiny != 0 {
+		<a href="../src/runtime/malloc.go.html#line-1056" class="path-duplicate">malloc.go</a><a href="../src/runtime/malloc.go.html#line-1056">#L1056</a>: 			size = <b>maxTinySize</b>
+		<a href="../src/runtime/mfinal.go.html#line-359">mfinal.go#L359</a>: 		if ot.elem == nil || ot.elem.ptrdata != 0 || ot.elem.size &gt;= <b>maxTinySize</b> {
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.pageAlloc.free</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;"><b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/mpagealloc.go.html#line-175">pageAlloc</a>.<a href="../src/runtime/mpagealloc.go.html#line-864">free</a></b></span><span style="font-size: large;"><i> (method)</i></span>
+
+<span class="title">4 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/mheap.go.html#line-1197">mheap.go#L1197</a>: 			h.pages.<b>free</b>(allocBase, spaceBefore/pageSize)
+		<a href="../src/runtime/mheap.go.html#line-1201" class="path-duplicate">mheap.go</a><a href="../src/runtime/mheap.go.html#line-1201">#L1201</a>: 			h.pages.<b>free</b>(base+npages*pageSize, spaceAfter/pageSize)
+		<a href="../src/runtime/mheap.go.html#line-1488" class="path-duplicate">mheap.go</a><a href="../src/runtime/mheap.go.html#line-1488">#L1488</a>: 	h.pages.<b>free</b>(s.base(), s.npages)
+		<a href="../src/runtime/mpagealloc.go.html#line-864">mpagealloc.go#L864</a>: func (p *pageAlloc) <b>free</b>(base, npages uintptr) {
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

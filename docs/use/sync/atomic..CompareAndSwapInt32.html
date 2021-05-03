@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: sync/atomic.CompareAndSwapInt32</title>
+<link href="../../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">func <b><a href="../../pkg/sync/atomic.html">sync/atomic</a>.<a href="../../src/sync/atomic/doc.go.html#line-74">CompareAndSwapInt32</a></b></span>
+
+<span class="title">5 uses</span>
+
+	sync/atomic (current package)
+		<a href="../../src/sync/atomic/doc.go.html#line-74">doc.go#L74</a>: func <b>CompareAndSwapInt32</b>(addr *int32, old, new int32) (swapped bool)
+
+	<a href="../../pkg/sync.html">sync</a>
+		<a href="../../src/sync/mutex.go.html#line-74">mutex.go#L74</a>: 	if atomic.<b>CompareAndSwapInt32</b>(&m.state, 0, mutexLocked) {
+		<a href="../../src/sync/mutex.go.html#line-98" class="path-duplicate">mutex.go</a><a href="../../src/sync/mutex.go.html#line-98">#L98</a>: 				atomic.<b>CompareAndSwapInt32</b>(&m.state, old, old|mutexWoken) {
+		<a href="../../src/sync/mutex.go.html#line-129" class="path-duplicate">mutex.go</a><a href="../../src/sync/mutex.go.html#line-129">#L129</a>: 		if atomic.<b>CompareAndSwapInt32</b>(&m.state, old, new) {
+		<a href="../../src/sync/mutex.go.html#line-212" class="path-duplicate">mutex.go</a><a href="../../src/sync/mutex.go.html#line-212">#L212</a>: 			if atomic.<b>CompareAndSwapInt32</b>(&m.state, old, new) {
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

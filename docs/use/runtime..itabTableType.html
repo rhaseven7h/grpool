@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.itabTableType</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">type <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/iface.go.html#line-22">itabTableType</a></b></span>
+
+<span class="title">6 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/iface.go.html#line-18">iface.go#L18</a>: 	itabTableInit = <b>itabTableType</b>{size: itabInitSize} // starter table
+		<a href="../src/runtime/iface.go.html#line-22" class="path-duplicate">iface.go</a><a href="../src/runtime/iface.go.html#line-22">#L22</a>: type <b>itabTableType</b> struct {
+		<a href="../src/runtime/iface.go.html#line-53" class="path-duplicate">iface.go</a><a href="../src/runtime/iface.go.html#line-53">#L53</a>: 	t := (*<b>itabTableType</b>)(atomic.Loadp(unsafe.Pointer(&itabTable)))
+		<a href="../src/runtime/iface.go.html#line-96" class="path-duplicate">iface.go</a><a href="../src/runtime/iface.go.html#line-96">#L96</a>: func (t *<b>itabTableType</b>) find(inter *interfacetype, typ *_type) *itab {
+		<a href="../src/runtime/iface.go.html#line-136" class="path-duplicate">iface.go</a><a href="../src/runtime/iface.go.html#line-136">#L136</a>: 		t2 := (*<b>itabTableType</b>)(mallocgc((2+2*t.size)*sys.PtrSize, nil, true))
+		<a href="../src/runtime/iface.go.html#line-158" class="path-duplicate">iface.go</a><a href="../src/runtime/iface.go.html#line-158">#L158</a>: func (t *<b>itabTableType</b>) add(m *itab) {
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

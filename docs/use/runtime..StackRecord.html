@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.StackRecord</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">type <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/mprof.go.html#line-464">StackRecord</a></b></span>
+
+<span class="title">8 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/mprof.go.html#line-464">mprof.go#L464</a>: type <b>StackRecord</b> struct {
+		<a href="../src/runtime/mprof.go.html#line-470" class="path-duplicate">mprof.go</a><a href="../src/runtime/mprof.go.html#line-470">#L470</a>: func (r *<b>StackRecord</b>) Stack() []uintptr {
+		<a href="../src/runtime/mprof.go.html#line-624" class="path-duplicate">mprof.go</a><a href="../src/runtime/mprof.go.html#line-624">#L624</a>: 	<b>StackRecord</b>
+		<a href="../src/runtime/mprof.go.html#line-698" class="path-duplicate">mprof.go</a><a href="../src/runtime/mprof.go.html#line-698">#L698</a>: func ThreadCreateProfile(p []<b>StackRecord</b>) (n int, ok bool) {
+		<a href="../src/runtime/mprof.go.html#line-715" class="path-duplicate">mprof.go</a><a href="../src/runtime/mprof.go.html#line-715">#L715</a>: func runtime_goroutineProfileWithLabels(p []<b>StackRecord</b>, labels []unsafe.Pointer) (n int, ok bool) {
+		<a href="../src/runtime/mprof.go.html#line-720" class="path-duplicate">mprof.go</a><a href="../src/runtime/mprof.go.html#line-720">#L720</a>: func goroutineProfileWithLabels(p []<b>StackRecord</b>, labels []unsafe.Pointer) (n int, ok bool) {
+		<a href="../src/runtime/mprof.go.html#line-787" class="path-duplicate">mprof.go</a><a href="../src/runtime/mprof.go.html#line-787">#L787</a>: func GoroutineProfile(p []<b>StackRecord</b>) (n int, ok bool) {
+		<a href="../src/runtime/mprof.go.html#line-792" class="path-duplicate">mprof.go</a><a href="../src/runtime/mprof.go.html#line-792">#L792</a>: func saveg(pc, sp uintptr, gp *g, r *<b>StackRecord</b>) {
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

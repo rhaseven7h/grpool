@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Package: github.com/rhaseven7h/grpool</title>
+<link href="../../../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../../../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre id="package-details"><code><span style="font-size:xx-large;">package <b>grpool</b></span>
+
+<span class="title">Import Path</span>
+	<a href="../../../index.html#pkg-github.com/rhaseven7h/grpool">github.com/rhaseven7h/grpool</a><i> (on <a href="https://pkg.go.dev/github.com/rhaseven7h/grpool" target="_blank">go.dev</a>)</i>
+
+<span class="title">Dependency Relation</span>
+	imports <a href="../../../dep/github.com/rhaseven7h/grpool.html">2 packages</a>, and imported by 0 packages
+
+<div><span class="title">Involved Source Files</span>
+	<input type='checkbox' class="fold" id="file-0-fold-content"><label for="file-0-fold-content">   <a href="../../../src/github.com/rhaseven7h/grpool/doc.go.html#doc">d➜</a> <a href="../../../src/github.com/rhaseven7h/grpool/doc.go.html">doc.go</a></label><span id='file-0-fold-content-items' class="fold-items">
+		Package grpool provides a simple worker pool generic
+		implementation in Go.
+</span>
+	<span class="nodocs">      <a href="../../../src/github.com/rhaseven7h/grpool/grpool.go.html">grpool.go</a></span></div>
+<span class="title type-res">Package-Level Type Names<span class="title-stat"><i> (only one, which is exported)</i></span></span>
+
+<div id="exported-types-buttons" class="js-on">	/* sort exporteds by: <label id="sort-types-by-alphabet" class="button">alphabet</label> | <label id="sort-types-by-popularity" class="button">popularity</label> */</div><div id="exported-types"><div class="anchor type-res" id="name-GRPool" data-popularity="375">	<input type='checkbox' class="fold" id="GRPool-fold-content"><label for="GRPool-fold-content"> <a href="../../../use/github.com/rhaseven7h/grpool..GRPool.html">type</a> <a href="../../../src/github.com/rhaseven7h/grpool/grpool.go.html#line-9">GRPool</a> <i>(struct)</i></label><span id='GRPool-fold-content-docs' class="fold-docs">
+		GRPool contains the configuration for the worker pool.
+
+		<input type='checkbox' class="fold" id="GRPool-fold-fields"><label for="GRPool-fold-fields">Fields (<i>total 6, none are exported</i>)</label><span id='GRPool-fold-fields-items' class="fold-items">
+			<input type='checkbox' class="showhide" id="GRPool-showhide-fields"><i><label for="GRPool-showhide-fields" class="show-inline">/* 6 unexporteds ... */</label><label for="GRPool-showhide-fields" class="hide-inline">/* 6 unexporteds: */</label></i><span class="hidden"><i>
+			<span class="nodocs"><a href="../../../src/github.com/rhaseven7h/grpool/grpool.go.html#line-12">bufferSize</a> <i><a href="../../builtin.html#name-uint">uint</a></i></span></i></span><span class="hidden"><i>
+			<span class="nodocs"><a href="../../../src/github.com/rhaseven7h/grpool/grpool.go.html#line-13">pipe</a> <i>chan func()</i></span></i></span><span class="hidden"><i>
+			<span class="nodocs"><a href="../../../src/github.com/rhaseven7h/grpool/grpool.go.html#line-14">pipeOpen</a> <i><a href="../../builtin.html#name-bool">bool</a></i></span></i></span><span class="hidden"><i>
+			<span class="nodocs"><a href="../../../src/github.com/rhaseven7h/grpool/grpool.go.html#line-11">routines</a> <i><a href="../../builtin.html#name-uint">uint</a></i></span></i></span><span class="hidden"><i>
+			<span class="nodocs"><a href="../../../src/github.com/rhaseven7h/grpool/grpool.go.html#line-10">running</a> <i><a href="../../builtin.html#name-bool">bool</a></i></span></i></span><span class="hidden"><i>
+			<span class="nodocs"><a href="../../../src/github.com/rhaseven7h/grpool/grpool.go.html#line-15">waitGroup</a> <i><a href="../../sync.html">sync</a>.<a href="../../sync.html#name-WaitGroup">WaitGroup</a></i></span></i></span></span>
+		<input type='checkbox' class="fold" id="GRPool-fold-methods"><label for="GRPool-fold-methods">Methods (<i>total 6, in which 5 are exported</i>)</label><span id='GRPool-fold-methods-items' class="fold-items"><span>
+			<input type='checkbox' class="fold" id="GRPool-fold-method-IsRunning"><label for="GRPool-fold-method-IsRunning">(*T) <a href="../../../src/github.com/rhaseven7h/grpool/grpool.go.html#line-63">IsRunning</a>() <a href="../../builtin.html#name-bool">bool</a></label><span id='GRPool-fold-method-IsRunning-docs' class="fold-docs">
+				IsRunning returns true if there are workers running.
+</span></span><span>
+			<input type='checkbox' class="fold" id="GRPool-fold-method-Start"><label for="GRPool-fold-method-Start">(*T) <a href="../../../src/github.com/rhaseven7h/grpool/grpool.go.html#line-46">Start</a>()</label><span id='GRPool-fold-method-Start-docs' class="fold-docs">
+				Start instantiates workers for this pool.
+</span></span><span>
+			<input type='checkbox' class="fold" id="GRPool-fold-method-Stop"><label for="GRPool-fold-method-Stop">(*T) <a href="../../../src/github.com/rhaseven7h/grpool/grpool.go.html#line-69">Stop</a>()</label><span id='GRPool-fold-method-Stop-docs' class="fold-docs">
+				Stop closes the pipe of jobs, essentially stopping processing
+				of any new jobs.
+</span></span><span>
+			<input type='checkbox' class="fold" id="GRPool-fold-method-Submit"><label for="GRPool-fold-method-Submit">(*T) <a href="../../../src/github.com/rhaseven7h/grpool/grpool.go.html#line-78">Submit</a>(job func()) <a href="../../builtin.html#name-error">error</a></label><span id='GRPool-fold-method-Submit-docs' class="fold-docs">
+				Submit received a new job to be enqueued to be processed
+				by this pool's workers. It will return an error if the pipe
+				has already been closed by Stop(), or nil if the job was
+				enqueued successfully.
+</span></span><span>
+			<input type='checkbox' class="fold" id="GRPool-fold-method-Wait"><label for="GRPool-fold-method-Wait">(*T) <a href="../../../src/github.com/rhaseven7h/grpool/grpool.go.html#line-57">Wait</a>()</label><span id='GRPool-fold-method-Wait-docs' class="fold-docs">
+				Wait blocks until all workers are finished.
+				You would usually have a Stop() somewhere in your code
+				to ensure this call gets unblocked at some point in time.
+</span></span>
+			<input type='checkbox' class="showhide" id="GRPool-showhide-methods"><i><label for="GRPool-showhide-methods" class="show-inline">/* one unexported ... */</label><label for="GRPool-showhide-methods" class="hide-inline">/* one unexported: */</label></i><span class="hidden"><i>
+			<span class="nodocs">(*T) <a href="../../../src/github.com/rhaseven7h/grpool/grpool.go.html#line-38">worker</a>()</span></i></span></span>
+		<input type='checkbox' class="fold" id="GRPool-fold-results"><label for="GRPool-fold-results">As Outputs Of (<i>at least one exported</i>)</label><span id='GRPool-fold-results-items' class="fold-items"><span>
+			func <a href="#name-New">New</a>(routines <a href="../../builtin.html#name-uint">uint</a>, bufferSize <a href="../../builtin.html#name-uint">uint</a>) *<b>GRPool</b></span></span>
+
+</span></div></div>
+<div><span class="title value-res">Package-Level Functions<span class="title-stat"><i> (only one, which is exported)</i></span></span>
+
+<div class="anchor value-res" id="name-New">	<input type='checkbox' class="fold" id="New-fold-content"><label for="New-fold-content"> <a href="../../../use/github.com/rhaseven7h/grpool..New.html">func</a> <a href="../../../src/github.com/rhaseven7h/grpool/grpool.go.html#line-29">New</a>(routines <a href="../../builtin.html#name-uint">uint</a>, bufferSize <a href="../../builtin.html#name-uint">uint</a>) *<a href="#name-GRPool">GRPool</a></label><span id='New-fold-content-docs' class="fold-docs">
+		New creates a new GRPool object to control a set of worker
+		go routines.
+
+		The routines parameter is the number of go routines to be launched.
+		The bufferSize parameter is the number of jobs to be queued.
+
+		Submitting more than bufferSize jobs is allowed, but probably
+		will cause a lock on the Submit() method caller.
+
+		It is also possible to specify 0 as the bufferSize, to
+		create an unbuffered channel, and therefore, allow locking calls.
+
+</span></div></div></code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

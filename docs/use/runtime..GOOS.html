@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.GOOS</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">const <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/extern.go.html#line-253">GOOS</a></b></span>
+
+<span class="title">67 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/cgocall.go.html#line-121">cgocall.go#L121</a>: 	if !iscgo &amp;&amp; <b>GOOS</b> != "solaris" &amp;&amp; <b>GOOS</b> != "illumos" &amp;&amp; <b>GOOS</b> != "windows" {
+		<a href="../src/runtime/env_posix.go.html#line-27">env_posix.go#L27</a>: 	if <b>GOOS</b> == "windows" { // case insensitive
+		<a href="../src/runtime/extern.go.html#line-253">extern.go#L253</a>: const <b>GOOS</b> string = sys.GOOS
+		<a href="../src/runtime/lfstack_64bit.go.html#line-42">lfstack_64bit.go#L42</a>: 	if GOARCH == "ppc64" &amp;&amp; <b>GOOS</b> == "aix" {
+		<a href="../src/runtime/lfstack_64bit.go.html#line-54" class="path-duplicate">lfstack_64bit.go</a><a href="../src/runtime/lfstack_64bit.go.html#line-54">#L54</a>: 	if GOARCH == "ppc64" &amp;&amp; <b>GOOS</b> == "aix" {
+		<a href="../src/runtime/lock_sema.go.html#line-133">lock_sema.go#L133</a>: 	if <b>GOOS</b> == "aix" {
+		<a href="../src/runtime/malloc.go.html#line-532">malloc.go#L532</a>: 			case GOARCH == "arm64" &amp;&amp; <b>GOOS</b> == "ios":
+		<a href="../src/runtime/malloc.go.html#line-536" class="path-duplicate">malloc.go</a><a href="../src/runtime/malloc.go.html#line-536">#L536</a>: 			case <b>GOOS</b> == "aix":
+		<a href="../src/runtime/malloc.go.html#line-809" class="path-duplicate">malloc.go</a><a href="../src/runtime/malloc.go.html#line-809">#L809</a>: 	case <b>GOOS</b> == "windows":
+		<a href="../src/runtime/malloc.go.html#line-1231" class="path-duplicate">malloc.go</a><a href="../src/runtime/malloc.go.html#line-1231">#L1231</a>: 	if <b>GOOS</b> == "plan9" {
+		<a href="../src/runtime/mheap.go.html#line-51">mheap.go#L51</a>: 	physPageAlignedStacks = <b>GOOS</b> == "openbsd"
+		<a href="../src/runtime/netpoll.go.html#line-219">netpoll.go#L219</a>: 	if <b>GOOS</b> == "solaris" || <b>GOOS</b> == "illumos" || <b>GOOS</b> == "aix" {
+		<a href="../src/runtime/os_darwin.go.html#line-298">os_darwin.go#L298</a>: 	if <b>GOOS</b> == "darwin" && GOARCH == "arm64" {
+		<a href="../src/runtime/os_darwin.go.html#line-311" class="path-duplicate">os_darwin.go</a><a href="../src/runtime/os_darwin.go.html#line-311">#L311</a>: 	if !(<b>GOOS</b> == "ios" && GOARCH == "arm64") {
+		<a href="../src/runtime/os_darwin.go.html#line-323" class="path-duplicate">os_darwin.go</a><a href="../src/runtime/os_darwin.go.html#line-323">#L323</a>: 	if !(<b>GOOS</b> == "ios" && GOARCH == "arm64") {
+		<a href="../src/runtime/panic.go.html#line-1360">panic.go#L1360</a>: 	if <b>GOOS</b> == "windows" && _m_.libcallsp != 0 {
+		<a href="../src/runtime/proc.go.html#line-191">proc.go#L191</a>: 		if <b>GOOS</b> != "windows" {
+		<a href="../src/runtime/proc.go.html#line-556" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-556">#L556</a>: 	switch <b>GOOS</b> {
+		<a href="../src/runtime/proc.go.html#line-759" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-759">#L759</a>: 	if iscgo || <b>GOOS</b> == "solaris" || <b>GOOS</b> == "illumos" || <b>GOOS</b> == "windows" {
+		<a href="../src/runtime/proc.go.html#line-1212" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-1212">#L1212</a>: 	switch <b>GOOS</b> {
+		<a href="../src/runtime/proc.go.html#line-1224" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-1224">#L1224</a>: 	switch <b>GOOS</b> {
+		<a href="../src/runtime/proc.go.html#line-1326" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-1326">#L1326</a>: 	if (iscgo || <b>GOOS</b> == "windows") && !cgoHasExtraM {
+		<a href="../src/runtime/proc.go.html#line-1433" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-1433">#L1433</a>: 	if <b>GOOS</b> == "darwin" || <b>GOOS</b> == "ios" {
+		<a href="../src/runtime/proc.go.html#line-1808" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-1808">#L1808</a>: 	if (iscgo || <b>GOOS</b> == "windows") && !cgoHasExtraM {
+		<a href="../src/runtime/proc.go.html#line-2078" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-2078">#L2078</a>: 	if gp := getg(); gp != nil &amp;&amp; gp.m != nil &amp;&amp; (gp.m.lockedExt != 0 || gp.m.incgo) &amp;&amp; <b>GOOS</b> != "plan9" {
+		<a href="../src/runtime/proc.go.html#line-2957" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-2957">#L2957</a>: 		if <b>GOOS</b> != "plan9" { // Temporary workaround - see issue #42303.
+		<a href="../src/runtime/proc.go.html#line-3426" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-3426">#L3426</a>: 		if <b>GOOS</b> != "plan9" { // See golang.org/issue/22227.
+		<a href="../src/runtime/proc.go.html#line-3929" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-3929">#L3929</a>: 	if <b>GOOS</b> == "darwin" || <b>GOOS</b> == "ios" {
+		<a href="../src/runtime/proc.go.html#line-4265" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-4265">#L4265</a>: 	if atomic.Load(&amp;newmHandoff.haveTemplateThread) == 0 &amp;&amp; <b>GOOS</b> != "plan9" {
+		<a href="../src/runtime/proc.go.html#line-5204" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-5204">#L5204</a>: 		if <b>GOOS</b> == "netbsd" {
+		<a href="../src/runtime/proc.go.html#line-5901" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-5901">#L5901</a>: 						if <b>GOOS</b> != "windows" {
+		<a href="../src/runtime/runtime1.go.html#line-68">runtime1.go#L68</a>: 	if <b>GOOS</b> == "windows" {
+		<a href="../src/runtime/runtime1.go.html#line-355" class="path-duplicate">runtime1.go</a><a href="../src/runtime/runtime1.go.html#line-355">#L355</a>: 	if <b>GOOS</b> == "linux" {
+		<a href="../src/runtime/runtime2.go.html#line-1108">runtime2.go#L1108</a>: const framepointer_enabled = GOARCH == "amd64" || GOARCH == "arm64" &amp;&amp; (<b>GOOS</b> == "linux" || <b>GOOS</b> == "darwin" || <b>GOOS</b> == "ios")
+		<a href="../src/runtime/signal_amd64.go.html#line-52">signal_amd64.go#L52</a>: 	if <b>GOOS</b> == "darwin" && sig == _SIGFPE && gp.sigcode0 == 0 {
+		<a href="../src/runtime/signal_unix.go.html#line-339">signal_unix.go#L339</a>: 	if <b>GOOS</b> == "darwin" || <b>GOOS</b> == "ios" {
+		<a href="../src/runtime/signal_unix.go.html#line-355" class="path-duplicate">signal_unix.go</a><a href="../src/runtime/signal_unix.go.html#line-355">#L355</a>: 	if <b>GOOS</b> == "darwin" || <b>GOOS</b> == "ios" {
+		<a href="../src/runtime/signal_unix.go.html#line-360" class="path-duplicate">signal_unix.go</a><a href="../src/runtime/signal_unix.go.html#line-360">#L360</a>: 		if <b>GOOS</b> == "darwin" || <b>GOOS</b> == "ios" {
+		<a href="../src/runtime/signal_unix.go.html#line-372" class="path-duplicate">signal_unix.go</a><a href="../src/runtime/signal_unix.go.html#line-372">#L372</a>: 	if <b>GOOS</b> == "darwin" || <b>GOOS</b> == "ios" {
+		<a href="../src/runtime/signal_unix.go.html#line-435" class="path-duplicate">signal_unix.go</a><a href="../src/runtime/signal_unix.go.html#line-435">#L435</a>: 			if <b>GOOS</b> == "darwin" || <b>GOOS</b> == "ios" {
+		<a href="../src/runtime/signal_unix.go.html#line-828" class="path-duplicate">signal_unix.go</a><a href="../src/runtime/signal_unix.go.html#line-828">#L828</a>: 	if <b>GOOS</b> != "freebsd" && (isarchive || islibrary) && handler == _SIG_DFL && c.sigcode() != _SI_USER {
+		<a href="../src/runtime/signal_unix.go.html#line-856" class="path-duplicate">signal_unix.go</a><a href="../src/runtime/signal_unix.go.html#line-856">#L856</a>: 	if <b>GOOS</b> == "darwin" && GOARCH == "amd64" {
+		<a href="../src/runtime/signal_unix.go.html#line-993" class="path-duplicate">signal_unix.go</a><a href="../src/runtime/signal_unix.go.html#line-993">#L993</a>: 	if (<b>GOOS</b> == "darwin" || <b>GOOS</b> == "ios") && sig == _SIGPIPE {
+		<a href="../src/runtime/sigqueue.go.html#line-113">sigqueue.go#L113</a>: 				if <b>GOOS</b> == "darwin" || <b>GOOS</b> == "ios" {
+		<a href="../src/runtime/sigqueue.go.html#line-164" class="path-duplicate">sigqueue.go</a><a href="../src/runtime/sigqueue.go.html#line-164">#L164</a>: 					if <b>GOOS</b> == "darwin" || <b>GOOS</b> == "ios" {
+		<a href="../src/runtime/sigqueue.go.html#line-227" class="path-duplicate">sigqueue.go</a><a href="../src/runtime/sigqueue.go.html#line-227">#L227</a>: 		if <b>GOOS</b> == "darwin" || <b>GOOS</b> == "ios" {
+		<a href="../src/runtime/string.go.html#line-413">string.go#L413</a>: 	if <b>GOOS</b> == "plan9" {
+		<a href="../src/runtime/symtab.go.html#line-558">symtab.go#L558</a>: 			if <b>GOOS</b> == "aix" && isarchive {
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

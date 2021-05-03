@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.traceAllocBlockPtr</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">type <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/trace.go.html#line-935">traceAllocBlockPtr</a></b></span>
+
+<span class="title">6 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/trace.go.html#line-918">trace.go#L918</a>: 	head <b>traceAllocBlockPtr</b>
+		<a href="../src/runtime/trace.go.html#line-930" class="path-duplicate">trace.go</a><a href="../src/runtime/trace.go.html#line-930">#L930</a>: 	next <b>traceAllocBlockPtr</b>
+		<a href="../src/runtime/trace.go.html#line-935" class="path-duplicate">trace.go</a><a href="../src/runtime/trace.go.html#line-935">#L935</a>: type <b>traceAllocBlockPtr</b> uintptr
+		<a href="../src/runtime/trace.go.html#line-937" class="path-duplicate">trace.go</a><a href="../src/runtime/trace.go.html#line-937">#L937</a>: func (p <b>traceAllocBlockPtr</b>) ptr() *traceAllocBlock   { return (*traceAllocBlock)(unsafe.Pointer(p)) }
+		<a href="../src/runtime/trace.go.html#line-938" class="path-duplicate">trace.go</a><a href="../src/runtime/trace.go.html#line-938">#L938</a>: func (p *<b>traceAllocBlockPtr</b>) set(x *traceAllocBlock) { *p = <b>traceAllocBlockPtr</b>(unsafe.Pointer(x)) }
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

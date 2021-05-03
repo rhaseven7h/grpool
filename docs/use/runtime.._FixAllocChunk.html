@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime._FixAllocChunk</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">const <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/malloc.go.html#line-136">_FixAllocChunk</a></b></span>
+
+<span class="title">3 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/malloc.go.html#line-136">malloc.go#L136</a>: 	<b>_FixAllocChunk</b> = 16 << 10 // Chunk size for FixAlloc
+		<a href="../src/runtime/mfixalloc.go.html#line-80">mfixalloc.go#L80</a>: 		f.chunk = uintptr(persistentalloc(<b>_FixAllocChunk</b>, 0, f.stat))
+		<a href="../src/runtime/mfixalloc.go.html#line-81" class="path-duplicate">mfixalloc.go</a><a href="../src/runtime/mfixalloc.go.html#line-81">#L81</a>: 		f.nchunk = <b>_FixAllocChunk</b>
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.notesleep</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">func <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/lock_sema.go.html#line-165">notesleep</a></b></span>
+
+<span class="title">5 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/lock_sema.go.html#line-165">lock_sema.go#L165</a>: func <b>notesleep</b>(n *note) {
+		<a href="../src/runtime/proc.go.html#line-1340">proc.go#L1340</a>: 		<b>notesleep</b>(&g.m.park)
+		<a href="../src/runtime/proc.go.html#line-2234" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-2234">#L2234</a>: 		<b>notesleep</b>(&newmHandoff.wake)
+		<a href="../src/runtime/rwmutex.go.html#line-54">rwmutex.go#L54</a>: 				<b>notesleep</b>(&m.park)
+		<a href="../src/runtime/rwmutex.go.html#line-95" class="path-duplicate">rwmutex.go</a><a href="../src/runtime/rwmutex.go.html#line-95">#L95</a>: 			<b>notesleep</b>(&m.park)
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.maxStack</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">const <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/mprof.go.html#line-31">maxStack</a></b></span>
+
+<span class="title">4 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/mprof.go.html#line-31">mprof.go#L31</a>: 	<b>maxStack</b> = 32
+		<a href="../src/runtime/mprof.go.html#line-182" class="path-duplicate">mprof.go</a><a href="../src/runtime/mprof.go.html#line-182">#L182</a>: 	stk := (*[<b>maxStack</b>]uintptr)(add(unsafe.Pointer(b), unsafe.Sizeof(*b)))
+		<a href="../src/runtime/mprof.go.html#line-341" class="path-duplicate">mprof.go</a><a href="../src/runtime/mprof.go.html#line-341">#L341</a>: 	var stk [<b>maxStack</b>]uintptr
+		<a href="../src/runtime/mprof.go.html#line-417" class="path-duplicate">mprof.go</a><a href="../src/runtime/mprof.go.html#line-417">#L417</a>: 	var stk [<b>maxStack</b>]uintptr
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

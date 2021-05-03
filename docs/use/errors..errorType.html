@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: errors.errorType</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">var <b><a href="../pkg/errors.html">errors</a>.<a href="../src/errors/wrap.go.html#line-103">errorType</a></b></span>
+
+<span class="title">2 uses</span>
+
+	errors (current package)
+		<a href="../src/errors/wrap.go.html#line-86">wrap.go#L86</a>: 	if e := typ.Elem(); e.Kind() != reflectlite.Interface &amp;&amp; !e.Implements(<b>errorType</b>) {
+		<a href="../src/errors/wrap.go.html#line-103" class="path-duplicate">wrap.go</a><a href="../src/errors/wrap.go.html#line-103">#L103</a>: var <b>errorType</b> = reflectlite.TypeOf((*error)(nil)).Elem()
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

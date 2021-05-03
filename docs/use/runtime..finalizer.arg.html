@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.finalizer.arg</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;"><b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/mfinal.go.html#line-41">finalizer</a>.<a href="../src/runtime/mfinal.go.html#line-43">arg</a></b></span><span style="font-size: large;"><i> (field)</i></span>
+
+<span class="title">7 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/mfinal.go.html#line-43">mfinal.go#L43</a>: 	<b>arg</b>  unsafe.Pointer // ptr to object (may be a heap pointer)
+		<a href="../src/runtime/mfinal.go.html#line-99" class="path-duplicate">mfinal.go</a><a href="../src/runtime/mfinal.go.html#line-99">#L99</a>: 					unsafe.Offsetof(finalizer{}.<b>arg</b>) != sys.PtrSize ||
+		<a href="../src/runtime/mfinal.go.html#line-121" class="path-duplicate">mfinal.go</a><a href="../src/runtime/mfinal.go.html#line-121">#L121</a>: 	f.<b>arg</b> = p
+		<a href="../src/runtime/mfinal.go.html#line-131" class="path-duplicate">mfinal.go</a><a href="../src/runtime/mfinal.go.html#line-131">#L131</a>: 			callback(f.fn, f.<b>arg</b>, f.nret, f.fint, f.ot)
+		<a href="../src/runtime/mfinal.go.html#line-207" class="path-duplicate">mfinal.go</a><a href="../src/runtime/mfinal.go.html#line-207">#L207</a>: 					*(*unsafe.Pointer)(frame) = f.<b>arg</b>
+		<a href="../src/runtime/mfinal.go.html#line-212" class="path-duplicate">mfinal.go</a><a href="../src/runtime/mfinal.go.html#line-212">#L212</a>: 					(*eface)(frame).data = f.<b>arg</b>
+		<a href="../src/runtime/mfinal.go.html#line-230" class="path-duplicate">mfinal.go</a><a href="../src/runtime/mfinal.go.html#line-230">#L230</a>: 				f.<b>arg</b> = nil
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

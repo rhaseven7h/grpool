@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.memequal</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">func <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/stubs.go.html#line-149">memequal</a></b></span>
+
+<span class="title">9 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/map_faststr.go.html#line-37">map_faststr.go#L37</a>: 				if k.str == key.str || <b>memequal</b>(k.str, key.str, uintptr(key.len)) {
+		<a href="../src/runtime/map_faststr.go.html#line-72" class="path-duplicate">map_faststr.go</a><a href="../src/runtime/map_faststr.go.html#line-72">#L72</a>: 			if <b>memequal</b>(k.str, key.str, uintptr(key.len)) {
+		<a href="../src/runtime/map_faststr.go.html#line-99" class="path-duplicate">map_faststr.go</a><a href="../src/runtime/map_faststr.go.html#line-99">#L99</a>: 			if k.str == key.str || <b>memequal</b>(k.str, key.str, uintptr(key.len)) {
+		<a href="../src/runtime/map_faststr.go.html#line-132" class="path-duplicate">map_faststr.go</a><a href="../src/runtime/map_faststr.go.html#line-132">#L132</a>: 				if k.str == key.str || <b>memequal</b>(k.str, key.str, uintptr(key.len)) {
+		<a href="../src/runtime/map_faststr.go.html#line-167" class="path-duplicate">map_faststr.go</a><a href="../src/runtime/map_faststr.go.html#line-167">#L167</a>: 			if <b>memequal</b>(k.str, key.str, uintptr(key.len)) {
+		<a href="../src/runtime/map_faststr.go.html#line-194" class="path-duplicate">map_faststr.go</a><a href="../src/runtime/map_faststr.go.html#line-194">#L194</a>: 			if k.str == key.str || <b>memequal</b>(k.str, key.str, uintptr(key.len)) {
+		<a href="../src/runtime/map_faststr.go.html#line-252" class="path-duplicate">map_faststr.go</a><a href="../src/runtime/map_faststr.go.html#line-252">#L252</a>: 			if k.str != key.str &amp;&amp; !<b>memequal</b>(k.str, key.str, uintptr(key.len)) {
+		<a href="../src/runtime/map_faststr.go.html#line-329" class="path-duplicate">map_faststr.go</a><a href="../src/runtime/map_faststr.go.html#line-329">#L329</a>: 			if k.str != key.str &amp;&amp; !<b>memequal</b>(k.str, key.str, uintptr(key.len)) {
+		<a href="../src/runtime/stubs.go.html#line-149">stubs.go#L149</a>: func <b>memequal</b>(a, b unsafe.Pointer, size uintptr) bool
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

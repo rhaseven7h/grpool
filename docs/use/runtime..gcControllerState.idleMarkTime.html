@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.gcControllerState.idleMarkTime</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;"><b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/mgc.go.html#line-341">gcControllerState</a>.<a href="../src/runtime/mgc.go.html#line-380">idleMarkTime</a></b></span><span style="font-size: large;"><i> (field)</i></span>
+
+<span class="title">4 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/mgc.go.html#line-380">mgc.go#L380</a>: 	<b>idleMarkTime</b> int64
+		<a href="../src/runtime/mgc.go.html#line-439" class="path-duplicate">mgc.go</a><a href="../src/runtime/mgc.go.html#line-439">#L439</a>: 	c.<b>idleMarkTime</b> = 0
+		<a href="../src/runtime/mgc.go.html#line-1790" class="path-duplicate">mgc.go</a><a href="../src/runtime/mgc.go.html#line-1790">#L1790</a>: 		for i, ns := range []int64{sweepTermCpu, gcController.assistTime, gcController.dedicatedMarkTime + gcController.fractionalMarkTime, gcController.<b>idleMarkTime</b>, markTermCpu} {
+		<a href="../src/runtime/mgc.go.html#line-2018" class="path-duplicate">mgc.go</a><a href="../src/runtime/mgc.go.html#line-2018">#L2018</a>: 			atomic.Xaddint64(&amp;gcController.<b>idleMarkTime</b>, duration)
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: sync.WaitGroup</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">type <b><a href="../pkg/sync.html">sync</a>.<a href="../src/sync/waitgroup.go.html#line-20">WaitGroup</a></b></span>
+
+<span class="title">6 uses</span>
+
+	sync (current package)
+		<a href="../src/sync/waitgroup.go.html#line-20">waitgroup.go#L20</a>: type <b>WaitGroup</b> struct {
+		<a href="../src/sync/waitgroup.go.html#line-32" class="path-duplicate">waitgroup.go</a><a href="../src/sync/waitgroup.go.html#line-32">#L32</a>: func (wg *<b>WaitGroup</b>) state() (statep *uint64, semap *uint32) {
+		<a href="../src/sync/waitgroup.go.html#line-53" class="path-duplicate">waitgroup.go</a><a href="../src/sync/waitgroup.go.html#line-53">#L53</a>: func (wg *<b>WaitGroup</b>) Add(delta int) {
+		<a href="../src/sync/waitgroup.go.html#line-98" class="path-duplicate">waitgroup.go</a><a href="../src/sync/waitgroup.go.html#line-98">#L98</a>: func (wg *<b>WaitGroup</b>) Done() {
+		<a href="../src/sync/waitgroup.go.html#line-103" class="path-duplicate">waitgroup.go</a><a href="../src/sync/waitgroup.go.html#line-103">#L103</a>: func (wg *<b>WaitGroup</b>) Wait() {
+
+	<a href="../pkg/github.com/rhaseven7h/grpool.html">github.com/rhaseven7h/grpool</a>
+		<a href="../src/github.com/rhaseven7h/grpool/grpool.go.html#line-15">grpool.go#L15</a>:     waitGroup  sync.<b>WaitGroup</b>
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.gcBitsArena.free</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;"><b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/mheap.go.html#line-1895">gcBitsArena</a>.<a href="../src/runtime/mheap.go.html#line-1897">free</a></b></span><span style="font-size: large;"><i> (field)</i></span>
+
+<span class="title">5 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/mheap.go.html#line-1897">mheap.go#L1897</a>: 	<b>free</b> uintptr // free is the index into bits of the next free byte; read/write atomically
+		<a href="../src/runtime/mheap.go.html#line-1913" class="path-duplicate">mheap.go</a><a href="../src/runtime/mheap.go.html#line-1913">#L1913</a>: 	if b == nil || atomic.Loaduintptr(&amp;b.<b>free</b>)+bytes > uintptr(len(b.bits)) {
+		<a href="../src/runtime/mheap.go.html#line-1917" class="path-duplicate">mheap.go</a><a href="../src/runtime/mheap.go.html#line-1917">#L1917</a>: 	end := atomic.Xadduintptr(&amp;b.<b>free</b>, bytes)
+		<a href="../src/runtime/mheap.go.html#line-2042" class="path-duplicate">mheap.go</a><a href="../src/runtime/mheap.go.html#line-2042">#L2042</a>: 		result.<b>free</b> = 0
+		<a href="../src/runtime/mheap.go.html#line-2044" class="path-duplicate">mheap.go</a><a href="../src/runtime/mheap.go.html#line-2044">#L2044</a>: 		result.<b>free</b> = 8 - (uintptr(unsafe.Pointer(&result.bits[0])) & 7)
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

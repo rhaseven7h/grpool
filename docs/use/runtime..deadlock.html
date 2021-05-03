@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.deadlock</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">var <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/panic.go.html#line-1288">deadlock</a></b></span>
+
+<span class="title">6 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/panic.go.html#line-1288">panic.go#L1288</a>: var <b>deadlock</b> mutex
+		<a href="../src/runtime/panic.go.html#line-1327" class="path-duplicate">panic.go</a><a href="../src/runtime/panic.go.html#line-1327">#L1327</a>: 		lock(&amp;<b>deadlock</b>)
+		<a href="../src/runtime/panic.go.html#line-1328" class="path-duplicate">panic.go</a><a href="../src/runtime/panic.go.html#line-1328">#L1328</a>: 		lock(&amp;<b>deadlock</b>)
+		<a href="../src/runtime/proc.go.html#line-605">proc.go#L605</a>: 	lockInit(&amp;<b>deadlock</b>, lockRankDeadlock)
+		<a href="../src/runtime/proc.go.html#line-1141" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-1141">#L1141</a>: 		lock(&amp;<b>deadlock</b>)
+		<a href="../src/runtime/proc.go.html#line-1142" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-1142">#L1142</a>: 		lock(&amp;<b>deadlock</b>)
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

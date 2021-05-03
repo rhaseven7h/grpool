@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.markBits.isMarked</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;"><b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/mbitmap.go.html#line-132">markBits</a>.<a href="../src/runtime/mbitmap.go.html#line-257">isMarked</a></b></span><span style="font-size: large;"><i> (method)</i></span>
+
+<span class="title">10 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/mbitmap.go.html#line-257">mbitmap.go#L257</a>: func (m markBits) <b>isMarked</b>() bool {
+		<a href="../src/runtime/mcheckmark.go.html#line-74">mcheckmark.go#L74</a>: 	if !mbits.<b>isMarked</b>() {
+		<a href="../src/runtime/mgcmark.go.html#line-1430">mgcmark.go#L1430</a>: 		if mbits.<b>isMarked</b>() {
+		<a href="../src/runtime/mgcsweep.go.html#line-366">mgcsweep.go#L366</a>: 		if !mbits.<b>isMarked</b>() {
+		<a href="../src/runtime/mgcsweep.go.html#line-413" class="path-duplicate">mgcsweep.go</a><a href="../src/runtime/mgcsweep.go.html#line-413">#L413</a>: 			if !mbits.<b>isMarked</b>() &amp;&amp; (abits.index &lt; s.freeindex || abits.<b>isMarked</b>()) {
+		<a href="../src/runtime/mgcsweep.go.html#line-588" class="path-duplicate">mgcsweep.go</a><a href="../src/runtime/mgcsweep.go.html#line-588">#L588</a>: 		alloc := i &lt; s.freeindex || abits.<b>isMarked</b>()
+		<a href="../src/runtime/mgcsweep.go.html#line-594" class="path-duplicate">mgcsweep.go</a><a href="../src/runtime/mgcsweep.go.html#line-594">#L594</a>: 		if mbits.<b>isMarked</b>() {
+		<a href="../src/runtime/mgcsweep.go.html#line-599" class="path-duplicate">mgcsweep.go</a><a href="../src/runtime/mgcsweep.go.html#line-599">#L599</a>: 		zombie := mbits.<b>isMarked</b>() && !alloc
+		<a href="../src/runtime/mwbbuf.go.html#line-267">mwbbuf.go#L267</a>: 		if mbits.<b>isMarked</b>() {
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

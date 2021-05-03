@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.fastrandseed</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">var <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/proc.go.html#line-764">fastrandseed</a></b></span>
+
+<span class="title">5 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/proc.go.html#line-738">proc.go#L738</a>: 	mp.fastrand[0] = uint32(int64Hash(uint64(mp.id), <b>fastrandseed</b>))
+		<a href="../src/runtime/proc.go.html#line-739" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-739">#L739</a>: 	mp.fastrand[1] = uint32(int64Hash(uint64(cputicks()), ^<b>fastrandseed</b>))
+		<a href="../src/runtime/proc.go.html#line-764" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-764">#L764</a>: var <b>fastrandseed</b> uintptr
+		<a href="../src/runtime/proc.go.html#line-767" class="path-duplicate">proc.go</a><a href="../src/runtime/proc.go.html#line-767">#L767</a>: 	s := (*[unsafe.Sizeof(<b>fastrandseed</b>)]byte)(unsafe.Pointer(&amp;<b>fastrandseed</b>))[:]
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

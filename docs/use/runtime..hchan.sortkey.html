@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.hchan.sortkey</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;"><b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/chan.go.html#line-32">hchan</a>.<a href="../src/runtime/select.go.html#line-502">sortkey</a></b></span><span style="font-size: large;"><i> (method)</i></span>
+
+<span class="title">9 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/select.go.html#line-190">select.go#L190</a>: 		for j &gt; 0 &amp;&amp; scases[lockorder[(j-1)/2]].c.<b>sortkey</b>() &lt; c.<b>sortkey</b>() {
+		<a href="../src/runtime/select.go.html#line-207" class="path-duplicate">select.go</a><a href="../src/runtime/select.go.html#line-207">#L207</a>: 			if k+1 &lt; i &amp;&amp; scases[lockorder[k]].c.<b>sortkey</b>() &lt; scases[lockorder[k+1]].c.<b>sortkey</b>() {
+		<a href="../src/runtime/select.go.html#line-210" class="path-duplicate">select.go</a><a href="../src/runtime/select.go.html#line-210">#L210</a>: 			if c.<b>sortkey</b>() &lt; scases[lockorder[k]].c.<b>sortkey</b>() {
+		<a href="../src/runtime/select.go.html#line-222" class="path-duplicate">select.go</a><a href="../src/runtime/select.go.html#line-222">#L222</a>: 			if scases[lockorder[i]].c.<b>sortkey</b>() &gt; scases[lockorder[i+1]].c.<b>sortkey</b>() {
+		<a href="../src/runtime/select.go.html#line-502" class="path-duplicate">select.go</a><a href="../src/runtime/select.go.html#line-502">#L502</a>: func (c *hchan) <b>sortkey</b>() uintptr {
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

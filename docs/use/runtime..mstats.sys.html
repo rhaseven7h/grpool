@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.mstats.sys</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;"><b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/mstats.go.html#line-21">mstats</a>.<a href="../src/runtime/mstats.go.html#line-25">sys</a></b></span><span style="font-size: large;"><i> (field)</i></span>
+
+<span class="title">4 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/mstats.go.html#line-25">mstats.go#L25</a>: 	<b>sys</b>         uint64 // bytes obtained from system (should be sum of xxx_sys below, no locking, approximate)
+		<a href="../src/runtime/mstats.go.html#line-487" class="path-duplicate">mstats.go</a><a href="../src/runtime/mstats.go.html#line-487">#L487</a>: 	stats.Sys = memstats.<b>sys</b>
+		<a href="../src/runtime/mstats.go.html#line-614" class="path-duplicate">mstats.go</a><a href="../src/runtime/mstats.go.html#line-614">#L614</a>: 	memstats.<b>sys</b> = memstats.heap_sys.load() + memstats.stacks_sys.load() + memstats.mspan_sys.load() +
+		<a href="../src/runtime/mstats.go.html#line-672" class="path-duplicate">mstats.go</a><a href="../src/runtime/mstats.go.html#line-672">#L672</a>: 	memstats.<b>sys</b> += memstats.stacks_inuse + memstats.gcWorkBufInUse + memstats.gcProgPtrScalarBitsInUse
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

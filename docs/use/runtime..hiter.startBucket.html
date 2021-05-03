@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.hiter.startBucket</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;"><b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/map.go.html#line-164">hiter</a>.<a href="../src/runtime/map.go.html#line-173">startBucket</a></b></span><span style="font-size: large;"><i> (field)</i></span>
+
+<span class="title">4 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/map.go.html#line-173">map.go#L173</a>: 	<b>startBucket</b> uintptr        // bucket iteration started at
+		<a href="../src/runtime/map.go.html#line-836" class="path-duplicate">map.go</a><a href="../src/runtime/map.go.html#line-836">#L836</a>: 	it.<b>startBucket</b> = r & bucketMask(h.B)
+		<a href="../src/runtime/map.go.html#line-840" class="path-duplicate">map.go</a><a href="../src/runtime/map.go.html#line-840">#L840</a>: 	it.bucket = it.<b>startBucket</b>
+		<a href="../src/runtime/map.go.html#line-868" class="path-duplicate">map.go</a><a href="../src/runtime/map.go.html#line-868">#L868</a>: 		if bucket == it.<b>startBucket</b> && it.wrapped {
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

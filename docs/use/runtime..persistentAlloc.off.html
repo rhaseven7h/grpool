@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.persistentAlloc.off</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;"><b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/malloc.go.html#line-1285">persistentAlloc</a>.<a href="../src/runtime/malloc.go.html#line-1287">off</a></b></span><span style="font-size: large;"><i> (field)</i></span>
+
+<span class="title">7 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/malloc.go.html#line-1287">malloc.go#L1287</a>: 	<b>off</b>  uintptr
+		<a href="../src/runtime/malloc.go.html#line-1353" class="path-duplicate">malloc.go</a><a href="../src/runtime/malloc.go.html#line-1353">#L1353</a>: 	persistent.<b>off</b> = alignUp(persistent.<b>off</b>, align)
+		<a href="../src/runtime/malloc.go.html#line-1354" class="path-duplicate">malloc.go</a><a href="../src/runtime/malloc.go.html#line-1354">#L1354</a>: 	if persistent.<b>off</b>+size > persistentChunkSize || persistent.base == nil {
+		<a href="../src/runtime/malloc.go.html#line-1371" class="path-duplicate">malloc.go</a><a href="../src/runtime/malloc.go.html#line-1371">#L1371</a>: 		persistent.<b>off</b> = alignUp(sys.PtrSize, align)
+		<a href="../src/runtime/malloc.go.html#line-1373" class="path-duplicate">malloc.go</a><a href="../src/runtime/malloc.go.html#line-1373">#L1373</a>: 	p := persistent.base.add(persistent.<b>off</b>)
+		<a href="../src/runtime/malloc.go.html#line-1374" class="path-duplicate">malloc.go</a><a href="../src/runtime/malloc.go.html#line-1374">#L1374</a>: 	persistent.<b>off</b> += size
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

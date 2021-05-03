@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: internal/reflectlite.Type.Elem</title>
+<link href="../../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;"><b><a href="../../pkg/internal/reflectlite.html">internal/reflectlite</a>.<a href="../../src/internal/reflectlite/type.go.html#line-25">Type</a>.<a href="../../src/internal/reflectlite/type.go.html#line-64">Elem</a></b></span><span style="font-size: large;"><i> (method)</i></span>
+
+<span class="title">5 uses</span>
+
+	internal/reflectlite (current package)
+		<a href="../../src/internal/reflectlite/swapper.go.html#line-33">swapper.go#L33</a>: 	typ := v.Type().<b>Elem</b>().(*rtype)
+		<a href="../../src/internal/reflectlite/type.go.html#line-64">type.go#L64</a>: 	<b>Elem</b>() Type
+
+	<a href="../../pkg/errors.html">errors</a>
+		<a href="../../src/errors/wrap.go.html#line-86">wrap.go#L86</a>: 	if e := typ.<b>Elem</b>(); e.Kind() != reflectlite.Interface && !e.Implements(errorType) {
+		<a href="../../src/errors/wrap.go.html#line-89" class="path-duplicate">wrap.go</a><a href="../../src/errors/wrap.go.html#line-89">#L89</a>: 	targetType := typ.<b>Elem</b>()
+		<a href="../../src/errors/wrap.go.html#line-103" class="path-duplicate">wrap.go</a><a href="../../src/errors/wrap.go.html#line-103">#L103</a>: var errorType = reflectlite.TypeOf((*error)(nil)).<b>Elem</b>()
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

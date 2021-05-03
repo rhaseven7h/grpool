@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: sync/atomic.LoadPointer</title>
+<link href="../../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">func <b><a href="../../pkg/sync/atomic.html">sync/atomic</a>.<a href="../../src/sync/atomic/doc.go.html#line-126">LoadPointer</a></b></span>
+
+<span class="title">13 uses</span>
+
+	sync/atomic (current package)
+		<a href="../../src/sync/atomic/doc.go.html#line-126">doc.go#L126</a>: func <b>LoadPointer</b>(addr *unsafe.Pointer) (val unsafe.Pointer)
+		<a href="../../src/sync/atomic/value.go.html#line-30">value.go#L30</a>: 	typ := <b>LoadPointer</b>(&vp.typ)
+		<a href="../../src/sync/atomic/value.go.html#line-35" class="path-duplicate">value.go</a><a href="../../src/sync/atomic/value.go.html#line-35">#L35</a>: 	data := <b>LoadPointer</b>(&vp.data)
+		<a href="../../src/sync/atomic/value.go.html#line-52" class="path-duplicate">value.go</a><a href="../../src/sync/atomic/value.go.html#line-52">#L52</a>: 		typ := <b>LoadPointer</b>(&vp.typ)
+
+	<a href="../../pkg/sync.html">sync</a>
+		<a href="../../src/sync/map.go.html#line-128">map.go#L128</a>: 	p := atomic.<b>LoadPointer</b>(&e.p)
+		<a href="../../src/sync/map.go.html#line-171" class="path-duplicate">map.go</a><a href="../../src/sync/map.go.html#line-171">#L171</a>: 		p := atomic.<b>LoadPointer</b>(&e.p)
+		<a href="../../src/sync/map.go.html#line-240" class="path-duplicate">map.go</a><a href="../../src/sync/map.go.html#line-240">#L240</a>: 	p := atomic.<b>LoadPointer</b>(&e.p)
+		<a href="../../src/sync/map.go.html#line-256" class="path-duplicate">map.go</a><a href="../../src/sync/map.go.html#line-256">#L256</a>: 		p = atomic.<b>LoadPointer</b>(&e.p)
+		<a href="../../src/sync/map.go.html#line-298" class="path-duplicate">map.go</a><a href="../../src/sync/map.go.html#line-298">#L298</a>: 		p := atomic.<b>LoadPointer</b>(&e.p)
+		<a href="../../src/sync/map.go.html#line-376" class="path-duplicate">map.go</a><a href="../../src/sync/map.go.html#line-376">#L376</a>: 	p := atomic.<b>LoadPointer</b>(&e.p)
+		<a href="../../src/sync/map.go.html#line-381" class="path-duplicate">map.go</a><a href="../../src/sync/map.go.html#line-381">#L381</a>: 		p = atomic.<b>LoadPointer</b>(&e.p)
+		<a href="../../src/sync/poolqueue.go.html#line-90">poolqueue.go#L90</a>: 	typ := atomic.<b>LoadPointer</b>(&slot.typ)
+		<a href="../../src/sync/poolqueue.go.html#line-225" class="path-duplicate">poolqueue.go</a><a href="../../src/sync/poolqueue.go.html#line-225">#L225</a>: 	return (*poolChainElt)(atomic.<b>LoadPointer</b>((*unsafe.Pointer)(unsafe.Pointer(pp))))
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>References: runtime.funcID_sigpanic</title>
+<link href="../css/light-v0.2.7-preview.css" rel="stylesheet">
+<script src="../jvs/golds-v0.2.7-preview.js"></script>
+<body onload="onPageLoad()"><div>
+
+<pre><code><span style="font-size:x-large;">const <b><a href="../pkg/runtime.html">runtime</a>.<a href="../src/runtime/symtab.go.html#line-321">funcID_sigpanic</a></b></span>
+
+<span class="title">4 uses</span>
+
+	runtime (current package)
+		<a href="../src/runtime/symtab.go.html#line-321">symtab.go#L321</a>: 	<b>funcID_sigpanic</b>
+		<a href="../src/runtime/traceback.go.html#line-249">traceback.go#L249</a>: 				if doPrint &amp;&amp; gp.m.incgo &amp;&amp; f.funcID == <b>funcID_sigpanic</b> {
+		<a href="../src/runtime/traceback.go.html#line-473" class="path-duplicate">traceback.go</a><a href="../src/runtime/traceback.go.html#line-473">#L473</a>: 		waspanic = f.funcID == <b>funcID_sigpanic</b>
+		<a href="../src/runtime/traceback.go.html#line-865" class="path-duplicate">traceback.go</a><a href="../src/runtime/traceback.go.html#line-865">#L865</a>: 	return !(id == funcID_gopanic || id == <b>funcID_sigpanic</b> || id == funcID_panicwrap)
+</code></pre><pre id="footer">
+The pages are generated with <a href="https://go101.org/article/tool-golds.html"><b>Golds</b></a> <i>v0.2.7-preview</i>. (GOOS=darwin GOARCH=amd64)</pre>
